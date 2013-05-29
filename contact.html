@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<!-- If you’re looking for the online demo, it’s here: http://mathiasbynens.be/demo/placeholder -->
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>Contact me</title>
+  <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
+  <link href='css/style.css' rel='stylesheet' type='text/css'>
+ </head>
+ <body>
+  
+  <form id="contactme" action="send.php" method="POST">
+    <h1>Contact Me</h1>
+  	<p><label>Name* :</label> <input type="text" name="name" id="name" placeholder="Name" title="Enter your First Name" ></p>
+   	<p><label>Last Name : </label><input type="text" name="last_name" id="last_name" placeholder="Last Name" ></p>
+   	<p><label>E-mail* : </label><input type="email" name="email" id="email" placeholder="address@example.ext" title="address@example.ext" ></p>
+   	<p><label>Message* :</label><textarea name="message" id="message" placeholder="Your message goes here" title="Your message goes here" ></textarea></p>
+    <p><i>* Required fields</i><p>
+   	<p><input type="submit" value="Send" id="sendmemessage"></p>
+   	<p id='response'></p>
+  </form>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+
+ </body>
+</html>
