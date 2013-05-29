@@ -1,0 +1,463 @@
+/* @nerisina */
+
+/* @font-face
+================================================================================================= */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300&subset=latin,latin-ext);
+@font-face {
+    font-family: 'digital_dreamregular';
+    src: url('fonts/digitaldream-webfont.eot');
+    src: url('fonts/digitaldream-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/digitaldream-webfont.woff') format('woff'),
+         url('fonts/digitaldream-webfont.ttf') format('truetype'),
+         url('fonts/digitaldream-webfont.svg#digital_dreamregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pacificoregular';
+    src: url('fonts/pacifico-webfont.eot');
+    src: url('fonts/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/pacifico-webfont.woff') format('woff'),
+         url('fonts/pacifico-webfont.ttf') format('truetype'),
+         url('fonts/pacifico-webfont.svg#pacificoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.pacifico{ font-family: 'pacificoregular';}
+
+
+/* #header
+================================================================================================= */
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgogIDxyZWN0IHdpZHRoPSI1IiBoZWlnaHQ9IjUiIGZpbGw9IiNmZmYiPjwvcmVjdD4KICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjY2NjIj48L3JlY3Q+CiAgPC9zdmc+");
+}
+header{
+	background: #255F7E;
+	height: 75px;
+	width: 100%;
+	color: #fff;
+	padding-top: 10px;
+	color:#fff;
+	color: rgba(255,255,255,0.8);
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 4px 4px 10px rgba(0,0,5,0.5);
+	-moz-box-shadow: 4px 4px 10px rgba(0,0,5,0.5);
+	-o-box-shadow: 4px 4px 10px rgba(0,0,5,0.5);
+	box-shadow: 4px 4px 10px rgba(0,0,5,0.5);
+	text-align: center;
+	margin:0 auto;
+	position: fixed;
+}
+#header{
+	width: 80%;
+	text-align: center;
+	margin:0 auto;
+	height: 100px;
+}
+#header span{
+	font-size: 25px;
+	color: rgb(244, 187, 80);
+}
+#title{
+	font-size: 30px;
+	float: left;
+}
+#title h2{
+	color: #fff;
+	text-shadow: -1px 0px 0px #000000;
+	filter: dropshadow(color=#000000, offx=-1, offy=0);
+}
+nav {
+	float: right;
+	padding-top: 17px;
+}
+nav li{
+	float: left;
+	margin: 0 0 0 5px;
+	list-style: none;
+}
+nav li a{
+	text-decoration: none;
+	padding: 5px 15px;
+	font-size: 20px;
+	color:#fff;
+	color: rgba(255,255,255,0.8);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+nav li a:hover,
+nav li a:focus{
+	text-decoration: underline;
+	color: #F4BB50;
+}
+/* */
+/* sections
+================================================================================================= */
+section .empty{
+	height: 50%;
+	width: 100%;
+	display: block;
+}
+#content{
+	text-align: center;
+	padding-top: 75px;
+}
+.section{
+	min-height: 500px;
+    height: auto;
+	margin: 0 auto;
+	text-align: left;
+	padding: 60px;
+	
+}
+.section h1{
+	font-size: 50px;
+	text-align: center;
+	padding: 30px;
+	text-shadow: 0px 1px 1px #4d4d4d;
+	color: #222;
+	border-bottom: 2px groove white;
+	filter: dropshadow(color=#fff, offx=-1, offy=0);
+}
+.section p{
+	font-size: 18px;
+	line-height: 1.5em;
+	padding: 15px;
+	text-align: justify;
+}
+#menuExp{
+	min-height: 200px;
+	text-align: center;
+	margin: 50px 0px;
+}
+#navExp{
+	width: 100%;
+	height:20px;
+}
+#navExp li{
+	margin: 0 0 0 5px;
+	list-style: none;
+	height: 200px;
+	width: 300px;
+	margin: 5px;
+	display: inline-block;
+	text-align: center;
+}
+#navExp li a{
+	text-indent: -99999px;
+	border: 1px solid gray;
+	/*Transition*/
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+a.expAlcatel{
+	background: url(../images/alcatel-lucent.png);
+	background-repeat: no-repeat;
+	background-position: 0 -200px; 
+	height: 200px;
+	width: 300px;
+	display: block;
+
+}
+a.expQuineq{
+	background: url(../images/qinetiq.png) #4CB5E3;
+	background-repeat: no-repeat;
+	background-position: center center; 
+	background-position: 0 -200px; 
+	height: 200px;
+	width: 300px;
+	display: block;
+}
+
+a.expEssex{
+	background: url(../images/essex.png);
+	background-repeat: no-repeat;
+	background-position: center center; 
+	background-position: 0 -200px; 
+	height: 200px;
+	width: 300px;
+	display: block;
+}
+a.expAlcatel:hover,
+a.expQuineq:hover,
+a.expEssex:hover{
+	background-position: 0 0;
+	opacity:1;
+}
+
+/* experience btns */
+.hover-cont {
+  background: #ffffff;
+  border-radius: 0;
+  width: 300px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+}
+.hover-cont:hover > .text {
+  box-shadow: 
+    inset 0 0 0 #6796E6, 
+    inset 0 0 0 #6CCED9, 
+    inset 0 0 0 #6BF0D9, 
+    inset 0 0 0 #67E6AC;
+}
+.hover-cont p {
+    transition:all 1000ms cubic-bezier(0.880, -0.570, 0.225, 1.550);
+    padding-top: 20%;
+    z-index: 10;
+    margin: 0 auto;
+    color:#fff;
+    width: 300px;
+    display: block;
+    height: 200px;
+    font-size:30px;
+    text-shadow: 0px 3px 3px rgba(150, 150, 150, 1);
+}
+.hover-cont p:hover {
+  opacity: 0;
+  padding-top: 30%;
+}
+.text {
+  border-radius: 0;
+  box-shadow: 
+    inset 0 300px 0 rgba(103,150,203,0.5), 
+    inset 200px 0 0 rgba(108,206,217,0.5), 
+    inset 0 -300px 0 rgba(107,240,217,0.5),     
+    inset -200px 0 0 rgba(103,230,172,0.5);
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  transition: box-shadow 1s;
+}
+
+.img {  
+  position: absolute; 
+  text-align: center;
+  width: 300px;
+  height: 200px;  
+}
+.img p {
+  margin-top:-70%;
+  text-shadow:none;
+  opacity:0;
+}
+.hover-cont:hover .img p {
+  opacity:1;
+}
+
+/* fin experience */
+#whoiam{
+	font-size: 25px;
+	font-family: 'digital_dreamregular';
+	text-align: center;
+	line-height: 2em;
+}
+#aboutme{
+}
+.sections{
+	margin: 100px 0; 
+}
+a {
+	color: #C65041;
+	text-decoration: none;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+a:hover{
+	color: #5FAEAB;
+
+}
+
+
+/* footer
+================================================================================================= */
+footer{
+	height: 85px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	font-size: 11px;
+	clear: both;
+	}
+#footer-logos{
+	bottom: 24px;
+    padding: 10px;
+    /*position: fixed;*/
+    
+    z-index: 1;
+}
+#footer-logos li{
+	display: inline;
+	list-style: none;
+	text-align: center;
+}
+#footer-logos a{
+	text-decoration: none;
+}
+#footer-logos img{
+	border: none;
+	width: 34px;
+	height: 34px;
+	margin: 0px 5px;
+}
+#footer-logos a img{
+	opacity: 0.25;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)"; /*hack IE 8 */
+	 filter: alpha(opacity = 25); /*hack IE 5-7*/
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+}
+#footer-logos a:hover img,
+#footer-logos a:focus img{
+	width: 64px;
+	height: 64px;
+	opacity: .8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";/*hack IE 8 */
+	filter: alpha(opacity = 80); /* hack IE 5-7*/
+}
+footer .copy{
+	height: 30px;
+	
+	background: #2E3846;
+	-webkit-box-shadow: -4px -4px 10px rgba(,5,5,0.5);
+	-moz-box-shadow: -4px -4px 10px rgba(0,0,5,0.5);
+	-o-box-shadow: -4px -4px 10px rgba(0,0,5,0.5);
+	box-shadow: -4px -4px 10px rgba(0,0,5,0.5);
+	opacity: .9;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";/*hack IE 8 */
+
+}
+footer .copy p{
+	padding: 10px;
+}
+/* CONTACT ME */
+form{ 
+	height: auto; 
+	width: 320px; 
+	border: 1px solid; 
+	padding: 30px; 
+	font: 12px;  
+}
+form h1{
+	margin: 0;
+	color: #255F7E;
+}
+.hasPlaceholder { 
+	color: #aaa; 
+}
+label{ 
+	width: 100%; 
+	display: inline-block;
+	font-size: 20px;
+}
+
+input { 
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	/* shadow */
+
+	border: 1px solid #747472;
+	width: 300px;
+	height: 25px;
+	margin: 15px 0;
+	color: #000000;
+	padding: 0 0 0 10px;
+	font-size: 1.2em;
+}
+textarea{
+	height: 150px;
+	width: 300px;
+	resize:none;
+	margin-top: 15px;
+	/* border radius */
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	/* shadow */
+	border: 1px solid #747472;
+}
+input[type="submit"]{
+	cursor: pointer;
+	background: #255F7E;
+	color: #ffffff;
+	padding: 10px;
+	width: 100px;
+	height: auto;
+	border: none;
+}
+input[type="submit"]:hover{
+	background-color: #F4BB50;
+}
+p i{
+	font-size: 10px;
+}
+input:required + label::after { content: "*"; }
+input.error{
+	border: 1px solid red;
+}
+label.error{
+	color: red;
+}
+
+
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#000;}
+#colorbox{outline:0;}
+    #cboxContent{margin-top:20px;background:#000;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{border:5px solid #000; background:#fff;}
+        #cboxTitle{position:absolute; top:-20px; left:0; color:#ccc;}
+        #cboxCurrent{position:absolute; top:-20px; right:0px; color:#ccc;}
+        #cboxLoadingGraphic{background:url(../images/loading.gif) no-repeat center center;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+        
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+        
+        #cboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
+        #cboxPrevious{position:absolute; top:50%; left:5px; margin-top:-32px; background:url(../images/controls.png) no-repeat top left; width:28px; height:65px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:bottom left;}
+        #cboxNext{position:absolute; top:50%; right:5px; margin-top:-32px; background:url(../images/controls.png) no-repeat top right; width:28px; height:65px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:bottom right;}
+        #cboxClose{position:absolute; top:5px; right:5px; display:block; background:url(../images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
+        #cboxClose:hover{background-position:bottom center;}

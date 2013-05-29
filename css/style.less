@@ -1,0 +1,228 @@
+/* Font Face */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300&subset=latin,latin-ext);
+@font-face {
+	font-family: 'digital_dreamregular';
+	src: url('fonts/digitaldream-webfont.eot');
+	src: url('fonts/digitaldream-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/digitaldream-webfont.woff') format('woff'),
+	url('fonts/digitaldream-webfont.ttf') format('truetype'),
+	url('fonts/digitaldream-webfont.svg#digital_dreamregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'pacificoregular';
+	src: url('fonts/pacifico-webfont.eot');
+	src: url('fonts/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/pacifico-webfont.woff') format('woff'),
+	url('fonts/pacifico-webfont.ttf') format('truetype'),
+	url('fonts/pacifico-webfont.svg#pacificoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+/* LESS Variables*/
+
+/* Colors */
+@bgHeader: #2E3846;
+
+/* Mixin */
+.pacifico{ font-family: 'pacificoregular';}/* variables */
+
+.box-shadow (@shadow){
+	-webkit-box-shadow:@shadow;
+	-moz-box-shadow:@shadow;
+	-o-box-shadow:@shadow;
+	box-shadow:@shadow;
+}
+
+.a-trans-hover(@transition){
+	-webkit-transition: @transition;
+	-moz-transition: @transition;
+	-o-transition: @transition;
+	transition: @transition;
+}
+
+/* #header
+================================================================================================= */
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgogIDxyZWN0IHdpZHRoPSI1IiBoZWlnaHQ9IjUiIGZpbGw9IiNmZmYiPjwvcmVjdD4KICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjY2NjIj48L3JlY3Q+CiAgPC9zdmc+");
+}	
+header{
+	background: fadeout(@bgHeader, 10%);;
+	height: 75px;
+	width: 100%;
+	color: #fff;
+	padding-top: 10px;
+	color:#fff;
+	color: rgba(255,255,255,0.8);
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	margin:0 auto;
+	position: absolute;
+	top:0;
+	.box-shadow(4px 4px 10px rgba(0,0,5,0.5));	
+
+	#header{
+		width: 80%;
+		text-align: center;
+		margin:0 auto;
+		height: 100px;
+		span{
+			font-size: 25px;
+			color: rgb(244, 187, 80);
+		}
+		#title{	
+			h2{
+				color: #fff;
+				text-shadow: -1px 0px 0px #000000;
+				filter: dropshadow(color=#000000, offx=-1, offy=0);
+				font-size: 30px;
+				float: left;
+			}
+		}
+		nav {
+			float: right;
+			padding-top: 17px;
+
+			li{
+				float: left;
+				margin: 0 0 0 5px;
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+				padding: 5px 15px;
+				font-size: 20px;
+				color:#fff;
+				color: rgba(255,255,255,0.8);
+				.a-trans-hover(all 0.3s ease-in-out);
+				&:hover,
+				&:focus{
+					text-decoration: underline;
+					color: #F4BB50;
+				}
+			}
+		}
+	}
+}
+
+/* sections
+================================================================================================= */
+.empty{
+	height: 500px;
+	width: 100%;
+	display: block;
+}
+#content{
+	text-align: center;
+	padding-top: 69px;
+}
+.section{
+	min-height: 500px;
+	height: auto;
+	margin: 0 auto;
+	text-align: left;
+	padding: 60px;
+
+	h1{
+		font-size: 50px;
+		text-align: center;
+		padding: 30px;
+		text-shadow: 0px 1px 1px #4d4d4d;
+		color: #222;
+		border-bottom: 1px groove @bgHeader;
+		filter: dropshadow(color=#fff, offx=-1, offy=0);
+	}
+	p{
+		font-size: 18px;
+		line-height: 1.5em;
+		padding: 15px;
+		text-align: justify;
+	}
+}
+#menuExp{
+	min-height: 200px;
+	text-align: center;
+	margin: 50px 0px;
+}
+#navExp{
+	width: 100%;
+	height:20px;
+	li{
+		margin: 0 0 0 5px;
+		list-style: none;
+		height: 200px;
+		width: 300px;
+		margin: 5px;
+		display: inline-block;
+		text-align: center;
+		a{
+			text-decoration: none;
+			font-size: 20px;
+			display: block;
+			height: 200px;
+			width: 300px;
+			margin: 5px;
+			color:#000;
+			color: rgba(0,0,0,0.8);
+			text-indent: -99999px;
+			border: 1px solid #eeeeee;
+			/*Transition*/
+			-webkit-transition: all 0.3s linear;
+			-moz-transition: all 0.2s linear;
+			-o-transition: all 0.3s linear;
+			transition: all 0.3s linear;
+
+			&:hover,
+			&:focus{
+
+				opacity: 0.7;
+			}
+		}
+	}
+}
+a.
+a.
+a.expEssex{
+	background: url(../images/essex.png);
+	background-repeat: no-repeat;
+	background-position: center center; 
+	background-size:contain;
+}
+
+#whoiam{
+	font-size: 25px;
+	background-color: #F4BB50;
+	font-family: 'digital_dreamregular';
+	text-align: center;
+	line-height: 2em;
+}
+
+a {
+	color: #C65041;
+	text-decoration: none;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	expAlcatel{
+	background: url(../images/alcatel-lucent.png);
+	background-repeat: no-repeat;
+	background-position: center center; 
+	background-size:contain;
+}
+expQuineq{
+	background: url(../images/qinetiq.png) #4CB5E3;
+	background-repeat: no-repeat;
+	background-position: center center; 
+	background-size:contain;
+}
+	&:hover{
+		color: #5FAEAB;
+	}
+
+}
+
+/* */
