@@ -54,7 +54,7 @@ function scrollIt(){
   event.preventDefault(); 
   var id = $(this).attr("href");
   $('html, body').animate({
-    scrollTop:$(id).offset().top
+    scrollTop:$(id).offset().top - 130
   }, 'slow');
 });  
 }
@@ -103,8 +103,47 @@ function submitForm(){
   })
 
 }
+
+/* Publications */
+function publications(){
+  $(".cbp_tmtimeline").hide();
+  $(".title-publications").css("margin-bottom", "10px");  
+  $(".toptop").hide();
+
+  /* display publications */
+  $('.title-publications a').each(function(){ 
+   $(this).click(function(event){
+    event.preventDefault();
+    var div = $(this).parent();
+   div.next().slideToggle(function(){
+    $(".toptop").show();
+   });
+   });
+ });
+
+  /* Close Publications */
+  $('.toptop a').each(function(){ 
+   $(this).click(function(event){
+    event.preventDefault();
+    var div = $(this).parent();
+    console.log(div.prev());
+    div.prev().hide();
+    $(this).hide();
+
+   });
+});
+}
+
+
+function slide(){
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+}
 $(document).ready(function(){
   experience();
   scrollIt();
   contactmeColorbox();
+  publications();
+  slide();
 });
